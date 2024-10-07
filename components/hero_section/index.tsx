@@ -34,20 +34,23 @@ const HeroSection = () => {
       <div className="flex flex-col lg:flex-row flex-grow bg-[#1e1d2b] ">
         {/* First new div with Blue Background occupying 70% on large screens and full width on medium and small screens */}
         <div
-          className="bg-[#1e1d2b]  w-full lg:w-9/12  h-[80vh] order-1 lg:order-1"
+          className="bg-[#1e1d2b] w-full lg:w-9/12 min-w-full lg:min-w-[768px] max-w-[980px] order-1 lg:order-1"
           style={{
+            height: "calc(80vh)", // Set height to leave 20vh below
             backgroundImage:
               "url('https://ukwritings.com/assets/header-bg-6e4025a81c26db055558179481139a1dca2efa53d0900777ed1f647db4cd4e00.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          {/* Optional content inside the blue div */}
-          <div className="h-full flex flex-col justify-center w-[450px]  lg:ml-44 text-[18px] md:text-[40px] text-left ml-4 lg:m-0 gap-y-2 md:leading-[50px]">
-            <p className="text-white ">
+          <div className="h-full flex flex-col justify-center w-[450px] lg:ml-44 text-[18px] md:text-[40px] text-left ml-4 lg:m-0 gap-y-2 md:leading-[50px]">
+            <p className="text-white">
               NEED THE BEST
-              <span className="font-extrabold pt-3 text-2xl md:text-[40px]  w-[100px]  ">
-                <br></br>ESSAY HELP IN<br></br> THE US?
+              <span className="font-extrabold pt-3 text-2xl md:text-[40px]">
+                <br />
+                ESSAY HELP IN
+                <br />
+                THE US?
               </span>
             </p>
             <p className="text-white text-md md:text-lg font-medium py-3 w-[280px] md:w-full">
@@ -55,25 +58,25 @@ const HeroSection = () => {
             </p>
             <div className="flex m-0 p-0 gap-x-3">
               <Image
-                alt="Menu"
+                alt="Badge"
                 src="https://ukwritings.com/assets/badge_charges2-e063e12f64521284ccf7ea7fe0c8d784befeb750d56a477281bdc2d39a737aa1.svg"
                 width={138}
                 height={30}
-                className="object-fit h-[30px] w-[138px] md:w-[160px] -ml-2 p-0 "
+                className="object-contain h-[30px] w-[138px] md:w-[160px] -ml-2"
               />
               <Image
-                alt="Menu"
+                alt="Badge"
                 src="https://ukwritings.com/assets/badge_guarantee2-046a57f24763ce42c41b3015e1fc8a9fb837bdbebed5082ef89157c1137f7883.svg"
                 width={138}
                 height={30}
-                className="object-fit h-[30px] w-[138px] md:w-[160px] m-0 p-0  "
+                className="object-contain h-[30px] w-[138px] md:w-[160px]"
               />
             </div>
           </div>
         </div>
 
         {/* Second new div with Pink Background occupying 30% on large screens and full width on medium and small screens */}
-        <div className="lg:mr-44 w-full md:h-[55vh] lg:w-4/12 h-[80vh] order-2 lg:order-2">
+        <div className="lg:mr-44 w-full lg:w-4/12 order-2 lg:order-2">
           {/* Optional content inside the pink div */}
           <div className="h-full flex flex-col text-left mt-14">
             <h3 className="text-white font-semibold pl-6 pt-4 text-center lg:text-left">
